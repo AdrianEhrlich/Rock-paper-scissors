@@ -21,6 +21,21 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+const rckBtn = document.querySelector(".rck");
+const pprBtn = document.querySelector(".ppr");
+const scsrsBtn = document.querySelector(".scsrs");
+
+rckBtn.addEventListener("click", () => {
+    console.log(playRound("rock", getComputerChoice()));
+});
+
+pprBtn.addEventListener("click", () => {
+    console.log(playRound("paper", getComputerChoice()));
+});
+
+scsrs.addEventListener("click", () => {
+    console.log(playRound("scissors", getComputerChoice()));
+});
 
 
 // Start the game
